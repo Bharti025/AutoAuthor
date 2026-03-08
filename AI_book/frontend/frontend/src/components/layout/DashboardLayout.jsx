@@ -33,7 +33,7 @@ const DashboardLayout = ({children}) => {
         <div className='h-8 w-8 bg-gradient-to-br from-violet-400 to violet-500 rounded-lg flex items-center justify-center'>
         <Album className='h-5 w-5 text-white'/>
       </div>
-      <span className='text-black font-bold text-xl'>AI ebook creator</span>
+      <span className='text-black font-bold text-xl'>AutoAuthor</span>
       </Link>
       </div>
       <div className='flex items-center space-x-3'>
