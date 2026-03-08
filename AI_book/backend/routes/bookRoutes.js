@@ -1,0 +1,11 @@
+import express from "express";
+const BookRouter=express.Router();
+import { createBook,getBooks,getBookById,updateBook,updateBookCover,deleteBook } from "../controller/bookController.js";
+import {protect} from "../middleware/authMiddleware.js";
+import {upload} from "../middleware/uploadMiddleware.js";
+BookRouter.use(protect);
+BookRouter.route("/").post(createBook).get(getBooks);
+BookRouter.route("/:id").get(getBookById).put(updateBook);
+BookRouter.delete("/:id",deleteBook);
+BookRouter.route("/cover/:id").put(upload,updateBookCover);
+export default BookRouter;

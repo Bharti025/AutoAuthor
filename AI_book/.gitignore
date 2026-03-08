@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+
+# environment variables
+/backend/.env
+
+# uploaded images/files
+/backend/uploads
+
+build
+
+dist
