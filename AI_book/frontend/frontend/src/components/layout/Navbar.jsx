@@ -47,7 +47,7 @@ const navLinks=[
               <BookOpen className='w-5 h-5 text-white' />
             </div>
             <span className='text-xl font-semibold text-[#3d2f1f] tracking-tight'>
-              Intellibre
+              AutoAuthor
             </span>
           </a>
 

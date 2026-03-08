@@ -19,7 +19,7 @@ const Footer = () => {
                             <div className="w-10 h-10 bg-linear-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:shadow-teal-500/50 transition-all duration-300 group-hover:scale-135">
                                 <BookOpen className='w-5 h-5 text-white' />
                             </div>
-                            <span className="text-xl font-semibold tracking-tight">Intellibre</span>
+                            <span className="text-xl font-semibold tracking-tight">AutoAuthor</span>
                         </a>
                         <p className="text-gray-400 leading-relaxed max-w-sm">
                             Create,design,and publish stunning ebooks with the power of AI
@@ -87,7 +87,7 @@ const Footer = () => {
                 <div className="border-t border-white/10 py-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         <p className="text-gray-200 text-sm">
-                            © {new Date().getFullYear()} Intellibre ,all rights reserved
+                            © {new Date().getFullYear()} AutoAuthor ,all rights reserved
                         </p>
                         <p className="text-gray-200 text-sm">
                             Made with <span className="text-red-500">❤️</span> for creators
