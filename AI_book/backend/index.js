@@ -4,6 +4,7 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
  //import connectDB from "./config/db.js";
+ import dotenv from "dotenv";
 import AuthRouter from "./routes/authRoutes.js";
 import BookRouter from "./routes/bookRoutes.js";
  import AiRouter from "./routes/aiRoutes.js";
@@ -29,7 +30,7 @@ app.use(
 app.use(express.json());
 
 // DB
-mongoose.connect("mongodb+srv://bharti:bharti@cluster0.frnxg36.mongodb.net/?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("✅ Connected successfully"))
   .catch(err => console.log("❌ FULL ERROR:", err));
 
